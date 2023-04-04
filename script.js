@@ -55,7 +55,7 @@ searchForm.addEventListener("submit", (event) => {
     if (inputDate.value) {
         const selectedDate = new Date(inputDate.value)
         currentDate = selectedDate.toISOString().split("T")[0]
-        heading.textContent = `Picture of The Day For ${currentDate}`
+        heading.textContent = `Picture On ${currentDate}`
         getImageOfTheDay()
         saveSearch()
         addSearchToHistory()
